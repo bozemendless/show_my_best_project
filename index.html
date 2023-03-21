@@ -57,7 +57,7 @@
                 <input type="number" name="" id="">
                 <input id="btn" type="button" value="send">
                 <h3>Output:</h3>
-                <p id="ans" style="display:none;">23</p>
+                <p id="ans"></p>
             </div>
         </div>
         
@@ -67,7 +67,7 @@
         const btn = document.querySelector("#btn")
         const ans = document.querySelector("#ans")
         btn.addEventListener("click", () => {
-            ans.style.display= "block"
+            ans.textContent = "23";
         })
     </script>
 </body>

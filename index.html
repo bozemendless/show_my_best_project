@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        * {
+            margin: 0;
+        }
+        main {
+            background-color: #000;
+            height: 100vh; 
+        }
+        .container {
+            width: 609px;
+            height: 544px;
+            background-image: url("best_image.png"); 
+            background-repeat: no-repeat; 
+            background-position: center;
+            background-size: cover;
+            margin: auto;
+            position: relative;
+        }
+        .wrapper {
+            width: 245px;
+            height: 391px; 
+            padding: 10px 30px;
+            position: absolute;
+            left: 179px;
+            top: 39px;
+        }
+        h2 {
+            margin-bottom: 20px;
+        }
+        input {
+            box-sizing: border-box;
+            display: block;
+            width: 200px;
+            margin-bottom: 30px;
+        }
+        h3 {
+            margin: 40px 0;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="wrapper">
+                <h2>Calculator</h2>
+                <label for="">Number1:</label>
+                <input type="number" name="" id="">
+                <label for="">Number2:</label>
+                <input type="number" name="" id="">
+                <input id="btn" type="button" value="send">
+                <h3>Output:</h3>
+                <p id="ans" style="display:none;">23</p>
+            </div>
+        </div>
+        
+    </main>
+
+    <script>
+        const btn = document.querySelector("#btn")
+        const ans = document.querySelector("#ans")
+        btn.addEventListener("click", () => {
+            ans.style.display= "block"
+        })
+    </script>
+</body>
+</html>
